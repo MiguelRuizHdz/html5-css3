@@ -1,0 +1,69 @@
+/* Práctica 1 */
+
+a:hover {
+    background-color: darkgreen;
+    color: white !important;
+}
+
+a:visited {
+    color: darkcyan;
+}
+
+/* Práctica 2 */
+
+.practica2 > h1, .practica2 > h2, .practica2 > h3, .practica2 > h4, .practica2 > h5, .practica2 > h6 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.practica2 > h3 {
+    color: #ff0000;
+    background-color: #ffff00;
+}
+    
+.practica2 > h4 {
+    color: red;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 900;
+}
+    
+.practica2 > h5 {
+    color: blue;
+}
+
+.practica2 > h6 {
+    color: green;
+}
+
+/* Práctica 3 */
+
+.practica3 > h1, .practica3 > h2, .practica3 > h3, .practica3 > h4, .practica3 > h5, .practica3 > h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    color: red;
+}
+
+.practica3 > h1 {
+    font-size: 40px;
+}
+.practica3 > h2 {
+    font-size: 30px;
+}
+.practica3 > h3 {
+    font-size: 25px;
+}
+    
+.practica3 > h4 {
+    font-size: 20px;
+}
+    
+.practica3 > h5 {
+    font-size: 15px;
+}
+
+.practica3 > h6 {
+    font-size: 10px;
+}
+
+
