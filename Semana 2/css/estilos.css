@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+/* Selector simple */
+p {
+    text-align: center;
+    color: red;
+    font-family: 'Koulen', cursive;
+}
+
+.texto {
+    
+}
+
+#menu {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px 20px;
+    margin: 20px;
+}
+
+.palabra {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+img {
+    float: left;
+}
+
+.boton {
+    background-color: green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+}
+
+.desactivado {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Selector combinado */
+div p {
+    background-color: yellow;
+}
+
+/* Pseudo clases */
+a:hover {
+    color: hotpink;
+}
+
+/* Pseudo elementos */
+p::first-letter{
+    color: rebeccapurple;
+    font-variant: small-caps;
+}
+
+/* Selector de atributo */
+a[target] {
+    background-color: yellow;
+}
