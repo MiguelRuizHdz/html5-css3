@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    font-family: 'Product Sans', 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.logo, .menu, .perfil {
+    display: flex;
+    padding: 16px;
+}
+
+.logo {
+    height: 28px;
+    padding-left: 0;
+}
+
+.logo img {
+    margin-top: 3px;
+}
+
+.logo span {
+    font-size: 23px;
+    color: #5F6368;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    
+    height: 40px;
+    background-color: white;
+    padding: 8px;
+    align-items: center;
+    border-bottom: .001px solid #a0a0a077;
+    
+}
+
+.redondo {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+}
+
+.igrid, .menu {
+    color: #5F6368;
+    cursor: pointer;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+.finalHeader {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.opciones {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 30px;
+    display: inline-flex;
+    align-content: center;
+
+    
+}
+
+.opcion{
+    border-radius: 4px;
+    border: 1px solid #5f636838;
+    color: #4285F4;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 9px 13px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.txt {
+    font-family: 'Product Sans', 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4285F4;
+}
+
+.opcion i {
+    margin-right: 8px;
+    
+}
+
+.seleccionado {
+    background-color: #4286f425;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.traductor{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 5px #5f636830, -3px 0 0.4em #5f636830;
+    margin: 0 20px;
+}
+.idiomas{
+    display: flex;
+}
+
+.buttons {
+    margin-top: 50px !important;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.button {
+    margin-right: 20px;
+    color: #5f6368;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.button span {
+    color: #5f6368;
+    font-weight: 500;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    color: #5f6368;
+    background-color: transparent;
+    border: 1px solid #5f636838;
+    cursor: pointer;
+}
+
+textarea {
+    background-color: ;
+    border: 0;
+}
+
+.izq {
+    float: left;
+}
+
+.final {
+    float: right;
+    font-style: oblique;
+    color: #5f6368;
+    font-size: 12px;
+    padding-right: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.idioma span {
+    padding: 16px 16px 10px 16px;
+    /* margin-bottom: 10px; */
+    cursor: pointer;
+}
+.idioma {
+    margin-bottom: 16px;
+}
+
+textarea {
+    margin-top: 10px;
+    font-size: 20px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.idioma span {
+    font-family: 'Product Sans', 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #5f6368;
+    font-size: 15px;
+}
+
+.select span {
+    color: #4285F4 !important;
+    border-bottom: #4285F4 3px solid;
+}
+
+.margin {
+    margin: 0 20px;
+}
