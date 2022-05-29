@@ -1,0 +1,72 @@
+/* Versión Escritorio */
+body {
+    background-color: tan;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline;
+}
+
+/* Versión tablet */
+@media screen and (max-width: 992px) {
+    body {
+        background-color: cadetblue;
+        color: white;
+    }
+
+    .titulo span {
+        position: relative;
+        visibility: hidden;
+    }
+
+    .titulo::after{
+        content: 'Titulo';
+        position: absolute;
+        left: 10px;
+    }
+
+    .banner {
+        display: block;
+        box-sizing: border-box;
+        background: url(https://mir-s3-cdn-cf.behance.net/projects/404/678982116172471.Y3JvcCwzMjAwLDI1MDIsMCwzNDg.png) no-repeat;
+        width: 180px;
+        height: 236px;
+        padding-left: 180px;
+    }
+}
+
+/* Versión mobile */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: olive;
+        color: white;
+    }
+    
+    .titulo span {
+        position: relative;
+        visibility: hidden;
+    }
+
+    .titulo::after{
+        content: 'Titulo2';
+        position: absolute;
+        left: 10px;
+        top: 100px;
+    }
+
+    .banner {
+        display: block;
+        box-sizing: border-box;
+        background: url(https://mir-s3-cdn-cf.behance.net/projects/404/dc307f104171977.Y3JvcCwxMDgwLDg0NSwxODcsNDg.png) no-repeat;
+        width: 180px;
+        height: 236px;
+        padding-left: 180px;
+    }
+}
