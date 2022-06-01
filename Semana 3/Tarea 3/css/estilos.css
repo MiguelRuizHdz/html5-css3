@@ -1,0 +1,179 @@
+/* Versión Escritorio */
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenido-principal {
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header .contactos {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(19, 55, 14);
+}
+
+.header {
+    display: flex;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(159, 226, 43);
+}
+
+.logo img {
+    height: 70px;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.contactos ul li, .contactos ul li a{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.nav ul, .contacto ul, .footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav li, .contacto li {
+    display: inline;
+    margin: 0 40px;
+}
+.nav a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #404040;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF6D10;
+    transition: color .3s ease;
+}
+
+.contacto a {
+    text-decoration: none;
+    color: white;
+}
+
+.contacto li {
+    color: white;
+}
+.redes li {
+    margin: 0 20px;
+    color: white;
+}
+
+ion-icon {
+    font-size: 20px;
+}
+
+.bienvenida {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FF6D10;
+}
+.bienvenida-info {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    max-width: 900px;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: darkolivegreen;
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-info {
+    display: grid;
+    grid-template-rows: 5fr;
+    grid-template-columns: 1fr 2fr 2fr;
+    padding: 20px 40px;
+    align-items: center;
+    justify-items: center;
+    border-bottom: white 2px solid;
+}
+.footer-info h2{
+    padding-bottom: 12px;
+}
+
+.footer-logo img {
+    max-height: 70px;
+    min-height: 20px;
+}
+.rights {
+    margin: 20px auto 20px auto;
+    text-align: center;
+}
+
+.footer-contactos ul li, .footer-contactos ul li a {
+    display: flex;
+    justify-content: left;
+}
+
+/* Versión tablet */
+@media screen and (max-width: 992px) {
+    .contenido-principal, .bienvenida {
+        background-color: cadetblue;
+    }
+
+    .titulo span {
+        display: none;
+    }
+
+    .titulo::after{
+        content: 'Disfruta todo lo bueno de llegar juntos';
+    }
+
+}
+
+/* Versión mobile */
+@media screen and (max-width: 600px) {
+
+    header .contactos {
+        height: 100px;
+    }
+    
+    .contenido-principal, .bienvenida {
+        background-color: olive;
+    }
+    
+    .titulo span {
+        display: none;
+    }
+
+    .titulo::after{
+        content: 'Sostenibilidad e Integridad';
+    }
+
+}
