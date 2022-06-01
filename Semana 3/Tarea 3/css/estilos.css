@@ -2,6 +2,7 @@
 * {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .contenido-principal {
@@ -19,7 +20,7 @@ header .contactos {
     height: 50px;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(19, 55, 14);
+    background-color: #13370E;
 }
 
 .header {
@@ -55,7 +56,7 @@ nav {
 .nav a {
     font-size: 16px;
     font-weight: bold;
-    color: #404040;
+    color: #13370E;
     text-decoration: none;
 }
 
@@ -116,7 +117,7 @@ ion-icon {
 
 .footer-info {
     display: grid;
-    grid-template-rows: 5fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 2fr 2fr;
     padding: 20px 40px;
     align-items: center;
@@ -141,10 +142,48 @@ ion-icon {
     justify-content: left;
 }
 
+.active {
+    color: #ffffff !important;
+    text-shadow: #13370E 1px 1px 1px;
+}
+.active:hover {
+    color: #FF6D10 !important;
+    text-shadow: #13370E 1px 1px 1px;
+}
+
+
+
+
+/* Acerca De */
+.bienvenida2 {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2bbeaa;
+}
+.bienvenida-info2 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    max-width: 900px;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: white;
+}
+
 /* Versión tablet */
 @media screen and (max-width: 992px) {
     .contenido-principal, .bienvenida {
         background-color: cadetblue;
+    }
+
+    .bienvenida2 {
+        background-color: rgb(154, 95, 160);
     }
 
     .titulo span {
@@ -167,6 +206,10 @@ ion-icon {
     .contenido-principal, .bienvenida {
         background-color: olive;
     }
+
+    .bienvenida2 {
+        background-color: rgb(150, 160, 95);
+    }
     
     .titulo span {
         display: none;
@@ -176,4 +219,14 @@ ion-icon {
         content: 'Sostenibilidad e Integridad';
     }
 
+    .footer-logo img {
+        display: none;
+    }
+
+    .footer-info {
+        align-items: flex-start;
+        grid-template-columns: 0fr 1fr 1fr;
+    }
 }
+
+
