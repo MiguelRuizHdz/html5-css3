@@ -142,3 +142,64 @@ nav {
     font-size: 20px;
     line-height: 1.6;
 }
+
+
+
+/* Empacadora */
+
+.seccion-empacadora {
+    justify-content: center;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 110px;
+    grid-auto-rows: minmax(100px, auto);
+    color: white;
+    padding: 160px 110px;
+}
+
+.seccion-empacadora::after {
+    position: absolute;
+    width: 100%;
+    height: 14px;
+    background: url(../imgs/mordidas1.png) no-repeat;
+    top: calc(81vh + 202px);
+    /* top: -13px; */
+    left: 0;
+    z-index: 3;
+    content: " ";
+    background-size: cover;
+}
+
+.seccion-info h2, .seccion-info h3 {
+    font-family: 'Archivo Black', sans-serif;
+    color: #FF6D10;
+}
+
+.seccion-info h2 {
+    font-size: 2.375rem;
+}
+.seccion-info h3 {
+    margin-bottom: 30px;
+}
+.seccion-info p {
+    margin-bottom: 30px;
+    color: #5F5F5F;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+button {
+    background-color: #FF6D10;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
