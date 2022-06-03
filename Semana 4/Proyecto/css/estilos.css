@@ -145,8 +145,33 @@ nav {
 
 
 
-/* Empacadora */
+/* Tienda */
 
+.seccion-tienda {
+    justify-content: center;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 110px;
+    grid-auto-rows: minmax(100px, auto);
+    color: white;
+    padding: 160px 110px;
+}
+
+.seccion-tienda::after {
+    position: absolute;
+    width: 100%;
+    height: 14px;
+    background: url(../imgs/mordidas1.png) no-repeat;
+    top: calc(81vh + 202px);
+    /* top: -13px; */
+    left: 0;
+    z-index: 3;
+    content: " ";
+    background-size: cover;
+}
+
+/* Empacadora */
 .seccion-empacadora {
     justify-content: center;
     background-color: white;
@@ -171,6 +196,13 @@ nav {
     background-size: cover;
 }
 
+.seccion-tienda .seccion-info h2, .seccion-tienda  .seccion-info h3  {
+    color: #003CA6;
+} 
+.seccion-tienda button, footer button {
+    background-color: #003CA6;
+
+}
 .seccion-info h2, .seccion-info h3 {
     font-family: 'Archivo Black', sans-serif;
     color: #FF6D10;
@@ -198,8 +230,54 @@ button {
     text-transform: uppercase;
     padding: 10px 20px;
     color: white;
+    max-width: 200px;
 }
 
 button:hover{
     cursor: pointer;
+}
+
+
+/* Footer */
+
+footer .grid {
+    margin-top: 80px;
+    background-color: #eaeaea;
+    color: #909090;
+}
+
+.grid {
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 40px;
+}
+
+.inputs input {
+    font-weight: bolder;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #808080;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.grid h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2.375rem;
+}
+.grid h3 {
+    font-family: 'ITC-Clearface-Std-Heavy', sans-serif;
+    /* font-size: 2.375rem; */
+}
+
+.grid h3, .grid p {
+    /* font-family: 'Archivo Black', sans-serif; */
+    /* font-size: 2.375rem; */
+}
+
+.grid .naranja {
+    color: #FF6D10;
+}
+.inputs {
+    color: #FF6D10;
 }
