@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- menú -->
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#conocimientos">Conocimientos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+        <!-- Principal (inicio) -->
+        <div id="inicio" class="inicio">
+            <div class="inicio-imagen">
+                <img src="./imgs/Fotografía.jpg" width="330" height="330" alt="Fotografía de Miguel Ruiz">
+            </div>
+            <div class="inicio-descripcion">
+                <h1>Hola, mi nombre es Miguel Ruiz</h1>
+                <h2>Desarrollador y diseñador de aplicaciones web y móviles.</h2>
+                <p>Soy estudiante de la carrera Ing. Administrador de Sistemas, interesado en el desarrollo de software Full Stack y especializado en Desarrollo Web y Aplicaciones Móviles.</p>
+                <a href="#" class="button">Descargar curriculum</a>
+            </div>
+        </div>
+        <!-- secundario (conocimientos)-->
+        <div class="conocimientos" id="conocimientos">
+            <div class="contenido-secundario">
+                <h2>Mis fortalezas</h2>
+                <ul>
+                    <li>Responsabilidad</li>
+                    <li>Toma de decisiones</li>
+                    <li>Liderazgo</li>
+                    <li>Motivación</li>
+                    <li>Aprendiendo constantemente</li>
+                </ul>
+            </div>
+            <!-- Tablas -->
+            <div class="tablas">
+                <table>
+                    <tr>
+                        <th>Habilidad</th>
+                        <th>Dominio</th>
+                        <th>Logo</th>
+                    </tr>
+                    <tr>
+                        <th>HTML5</th>
+                        <td>80%</td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>CSS3</th>
+                        <td>80%</td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS3">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Ionic</th>
+                        <td>75%</td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" alt="Ionic">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Angular</th>
+                        <td>60%</td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Blazor WebAssembly</th>
+                        <td>55%</td>
+                        <td>
+                            <img src="https://www.delta-n.nl/wp-content/uploads/2019/10/BrandBlazor_300.png" alt="Blazor WebAssembly">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>.NETCORE</th>
+                        <td>35%</td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt=".NETCORE">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Proyectos (carrusel) -->
+        <div class="carrusel">
+            <h2>Mis Proyectos</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./imgs/Biografia.png" alt="Biografia">
+                </div>
+                <div class="proyecto">
+                    <img src="./imgs/Traductor.png" alt="Traductor">
+                </div>
+                <div class="proyecto">
+                    <img src="./imgs/Transportes.png" alt="Transportes">
+                </div>
+                <div class="proyecto">
+                    <img src="./imgs/Carniceria.png" alt="Carniceria">
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario de contacto-->
+        <form action="" method="POST" class="form">
+            <div class="form-contenido">
+                <h2 class="titulo">Contactame</h2>
+                <p>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
+                <label for="form-nombre">
+                    Nombre Completo
+                    <input required name="nombre" id="form-nombre" type="text" placeholder="Juan">
+                </label>
+
+                <label for="form-correo">
+                    Correo electrónico
+                    <input required name="correo" id="form-correo" type="email" placeholder="Juan@ejemplo.com">
+                </label>
+
+                <label for="form-mensaje">
+                    Mensaje
+                    <textarea name="mensaje" id="form-mensaje" placeholder="Mensaje" cols="30" rows="10"></textarea>
+                </label>
+
+                <button class="button" type="submit">Enviar</button>
+            </div>
+        </form>
+
+        <!-- Pie de página (contacto) -->
+        <footer class="footer" id="contacto">
+            <div class="footer-contenido">
+                <div class="social">
+                    <a class="button-icon" href="tel:8181888600"><img src="icons/icon-phone.svg"></a>
+                    <a class="button-icon" href="mailto:miguel.ruiz.hdz.00@gmail.com"><img src="icons/icon-important_mail.svg"></a>
+                    <a class="button-icon" href="https://www.instagram.com/miguelruizhdz/"><img src="icons/icon-instagram.svg"></a>
+                    <a class="button-icon" href="http://twitter.com/MiguelRuizHdz"><img src="icons/icon-twitter_squared.svg"></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>Hecho con el ❤ por Miguel</p>
+                    <p>Copyright 2022 - Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
